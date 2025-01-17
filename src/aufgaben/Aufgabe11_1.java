@@ -6,7 +6,7 @@ public class Aufgabe11_1
 {
 	public static void main (String [] args) {
 		
-Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Geben Sie den Preis pro Kilowattstunde in Cent ein: ");
 		double iKwStunde = scan.nextDouble();
