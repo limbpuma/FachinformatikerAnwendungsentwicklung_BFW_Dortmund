@@ -21,6 +21,7 @@ public class Aufgabe13_1
 		double artikelPreis;
 		boolean expressversand;
 		double berechnung;
+		
 		BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.println("Geben Sie den Artikel ein: ");

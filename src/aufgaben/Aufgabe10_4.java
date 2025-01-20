@@ -15,11 +15,13 @@ public class Aufgabe10_4
 		
 		Scanner scan = new Scanner(System.in);
 		
+		int iSpannung, iWiderstand;
+		
 		System.out.println("Gibt die Spannung deines Gerät:");
-		int iSpannung = scan.nextInt();
+		iSpannung = scan.nextInt();
 		
 		System.out.println("Gibt die Widerstand deines Gerät:");
-		int iWiderstand = scan.nextInt();
+		iWiderstand = scan.nextInt();
 		
 		
 		double iStromstaerke = (iSpannung + 0.0)/iWiderstand;
