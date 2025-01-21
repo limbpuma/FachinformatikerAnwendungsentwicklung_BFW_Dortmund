@@ -16,7 +16,7 @@ Scanner scan = new Scanner(System.in);
 		
 		final double erdbeschleunigung = 9.81;
 		
-		double formel = (1000/2)* erdbeschleunigung * Math.pow(inputZ, 2); 
+		double formel = (0.5)* erdbeschleunigung * Math.pow(inputZ, 2); 
 		
 		System.out.println("Die Entfernung e betragt: " + formel + " Meter");
 	}
