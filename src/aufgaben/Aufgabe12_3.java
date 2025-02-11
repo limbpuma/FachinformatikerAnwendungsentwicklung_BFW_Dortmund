@@ -34,10 +34,13 @@ public class Aufgabe12_3
 	
 		
 		double aktuelleGalone = iTankkapazitaet *(iBenzinanzeige/100);
-		double verbraucht = aktuelleGalone * iGallone;
-		int naschteTankstelle = 200;
+		// System.out.print(aktuelleGalone);
 		
+		double verbraucht = aktuelleGalone * iGallone;
 		// System.out.print(verbraucht);
+		
+		int naschteTankstelle = 200;
+		// System.out.print(naschteTankstelle);
 		
 		if(verbraucht < naschteTankstelle) {
 			System.out.println("Bitte Tanken!");

@@ -1,5 +1,5 @@
 package aufgaben;
-
+import java.io.*;
 /*
  In einem Fantasy-Rollenspiel können die Spieler ihre Spielfiguren entwerfen, indem Sie einen Punktwert für jedes von drei Merkmalen vergeben:
 
@@ -33,11 +33,11 @@ public class Aufgabe13_4
 		inputOne = scan.readLine();
 		staerke = Integer.parseInt(inputOne);
 
-		System.out.println("Geben Sie die Erhitzungszeit für einen Posten: ");
+		System.out.println("Gesundheit eingeben (1-10): ");
 		inputTwo = scan.readLine();
 		gesundheit = Integer.parseInt(inputTwo);
 
-		System.out.println("Geben Sie die Erhitzungszeit für einen Posten: ");
+		System.out.println("Glück eingeben (1-10): ");
 		inputThree = scan.readLine();
 		glueck = Integer.parseInt(inputThree);
 

@@ -10,14 +10,14 @@ public class Aufgabe12_1
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Geben Sie den Gesamtbetrag ein: ");
-		int inputX = scan.nextInt();
+		double inputX = scan.nextDouble();
 		
-		int discount = inputX - (inputX / 10);
+		double discount = inputX - (inputX / 10);
 		
 		
 		if (inputX > 10) {
-			System.out.println("Discountpreis: " + discount);
-		}else System.out.println("Du bekommst kein Discountpreis: " + inputX);
+			System.out.println("Discountpreis: " + discount + " $");
+		}else System.out.println("Du bekommst kein Discountpreis: " + inputX +" $");
 		
 		
 		

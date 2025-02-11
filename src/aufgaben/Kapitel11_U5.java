@@ -13,6 +13,8 @@ public class Kapitel11_U5
 	String input1;
 	double a, b;
 	
+	
+	
 	System.out.println("Bitte geben Sie die Länge");
 	input1 = scan.readLine();
 	b = Integer.parseInt(input1);

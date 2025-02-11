@@ -1,5 +1,8 @@
 package aufgaben;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 /*
  * Schreiben Sie ein Programm, dass den Anwender nach seinem Geburtsjahr fragt, 
@@ -9,19 +12,25 @@ import java.util.Scanner;
  */
 public class Aufgabe12_5
 {
-	public static void main (String [] args) {
+	public static void main (String [] args) throws IOException  {
 		
-		Scanner scan = new Scanner(System.in);
+		System.out.println("Y2K Problem-Detektor");
+
+		BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
+		
+		String input;
+		int iGeburtsjahr,iAktuellesJahr;
 		
 		System.out.println("Geburtsjahr: ");
-		int iGeburtsjahr = scan.nextInt();
+		input = scan.readLine();
+		iGeburtsjahr = Integer.parseInt(input);
 		
-		System.out.println("Aktuelles Jahr: ");
-		int iAktuellesJahr = scan.nextInt();
-		
+		System.out.println("Geburtsjahr: ");
+		input = scan.readLine();
+		iAktuellesJahr = Integer.parseInt(input);
 		
 		System.out.printf("""
-				Geburtsjahr: %d\n
+				Geburtsjahr: %02d\n
 				Aktuelles Jahr: %02d\n
 				""",iGeburtsjahr,iAktuellesJahr);
 		
