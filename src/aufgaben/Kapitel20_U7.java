@@ -16,14 +16,14 @@ public class Kapitel20_U7
 
 		BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 		
-		
+		input = scan.readLine();
+		number = Integer.parseInt(input);
 		while (!questionLoop) {
 			
-			System.out.println(" Bitte geben Sie eine positive ganze Zahl ein (e = Ende): ");
+			System.out.println(" Bitte durch Kommas getrennte Zahlen eingeben: ");
 			
 				
-			input = scan.readLine();
-			number = Integer.parseInt(input);
+			
 			/*
 			laenge = String.valueOf(number).length();
 			*/

@@ -9,7 +9,7 @@ public class Kapitel20_U7B
 			BufferedReader stdin = new BufferedReader( new InputStreamReader( System.in ) );
 		
 					
-			int i, j,k, number;
+			int number;
 			
 			String	eingabe, // Benutzereingabe
 						strZahl; // Eine Zahl aus der Eingabe
@@ -18,31 +18,16 @@ public class Kapitel20_U7B
 			
 			System.out.println( "Bitte geben Sie beliebig viele durch Leerzeichen getrennte positive ganze Zahlen ein: " );			
 			eingabe = stdin.readLine();
+			number = Integer.parseInt(eingabe);
 			
 			
-			if ( eingabe.charAt( eingabe.length() - 1 ) != ' ' )
-				eingabe += " "; // eingabe = eingabe + " "
-			
-			strZahl = "";
-			
-			for ( i = 0 ; i < eingabe.length(); ++i ) // Die komplette Eingabe durchlaufen
-			{	zeichen = eingabe.charAt( i ); // das i-te Zeichen
+			for (int i = 0; i < eingabe.length(); i++) {
+				System.out.print(number + (" "));
 
-				if ( zeichen != ' ' ) // kein Leerzeichen, dann Zahl noch nicht zuende
-					strZahl += zeichen; // Also Zeichen an bisherige Ziffern hängen
-				else // Zahl zu Ende
-				{	
-					for (j = 0; j < eingabe.length(); j++) {
-						System.out.print(zeichen + (" "));
+				for (int j = 0; j < number; j++) {
 
-						for (k = 0; k < zeichen; k++) {
-
-							System.out.print("X");
-						}
-					}
+					System.out.print("X");
 				}
-			
-				
 			}
 			
 	}
